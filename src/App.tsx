@@ -235,12 +235,12 @@ export default function App() {
       </motion.header>
 
       {/* Card Viewport - 80% of screen */}
-      <main className="flex-1 flex items-center justify-center px-5 py-4 overflow-y-auto">
+      <main className="flex-1 flex items-center justify-center px-4 py-2 md:px-5 md:py-6 overflow-y-auto">
         <AnimatePresence mode="wait">
           {currentCard ? (
             <motion.div
               key={currentCard.id}
-              className="w-full max-w-md space-y-6"
+              className="w-full max-w-md space-y-3 md:space-y-6"
               initial={{ rotateY: 90, opacity: 0, scale: 0.8 }}
               animate={{ rotateY: 0, opacity: 1, scale: 1 }}
               exit={{ rotateY: -90, opacity: 0, scale: 0.8 }}
@@ -249,7 +249,7 @@ export default function App() {
             >
               {/* Philosopher name : Title (centered) */}
               <motion.div
-                className="text-center space-y-2.5"
+                className="text-center space-y-1.5 md:space-y-2.5"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.05 }}
@@ -272,7 +272,7 @@ export default function App() {
               {/* Tags */}
               {currentCard.tags && currentCard.tags.length > 0 && (
                 <motion.div
-                  className="flex justify-center gap-2 flex-wrap pb-2"
+                  className="flex justify-center gap-2 flex-wrap pb-0 md:pb-2"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.12 }}
@@ -291,7 +291,7 @@ export default function App() {
 
               {/* Summary - Most important */}
               <motion.div
-                className={`${theme.colors.cardBg} rounded-lg p-6 border ${theme.colors.border} space-y-3`}
+                className={`${theme.colors.cardBg} rounded-lg p-4 md:p-6 border ${theme.colors.border} space-y-2 md:space-y-3`}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.15 }}
@@ -399,13 +399,13 @@ export default function App() {
       </main>
 
       {/* Action Bar - Fixed Footer */}
-      <motion.footer 
-        className={`border-t ${theme.colors.border} p-4 ${theme.colors.bg}`}
+      <motion.footer
+        className={`border-t ${theme.colors.border} p-2 md:p-4 ${theme.colors.bg}`}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="max-w-md mx-auto space-y-3">
+        <div className="max-w-md mx-auto space-y-2 md:space-y-3">
           {/* Card count */}
           <motion.p 
             className={`text-center ${theme.colors.textMuted}`}

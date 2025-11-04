@@ -1,11 +1,293 @@
+# 🎮 PhiloDrink - 哲学派对卡牌游戏
 
-  # Party Card Game UI
+<div align="center">
 
-  This is a code bundle for Party Card Game UI. The original project is available at https://www.figma.com/design/WNuEC4T7TYaqLhvzypNfxQ/Party-Card-Game-UI.
+![PhiloDrink Banner](https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80)
 
-  ## Running the code
+**一个融合哲学思考与派对游戏的互动式卡牌游戏**
 
-  Run `npm i` to install the dependencies.
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-philo.lexaverse.dev-blue?style=for-the-badge)](https://philo.lexaverse.dev/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/AlyciaBHZ/philo-drinking)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-  Run `npm run dev` to start the development server.
-  
+[在线体验](https://philo.lexaverse.dev/) • [提交反馈](https://github.com/AlyciaBHZ/philo-drinking/issues) • [查看作品集](https://lexaverse.dev)
+
+</div>
+
+---
+
+## 📖 关于项目
+
+PhiloDrink 是一款创新的派对卡牌游戏，将经典哲学思想与现代社交游戏完美结合。每张卡片都包含一个哲学概念、有趣的挑战或深度的思考问题，让派对既充满欢乐又富有启发性。
+
+### ✨ 核心特色
+
+- 🎴 **丰富的卡牌库**：超过 100 张精心设计的卡片，涵盖多个哲学流派
+- 🎨 **6 种主题配色**：Zinc、Blue、Purple、Emerald、Rose、Amber 任您选择
+- 🔄 **智能洗牌系统**：自动洗牌，确保每次体验都独一无二
+- ↩️ **撤回功能**：支持撤回上一张卡片，游戏更灵活
+- 📱 **完美响应式**：在桌面、平板和手机上都能流畅运行
+- 🎭 **双模式切换**：酒精/无酒精版本，适应不同场合
+- ⌨️ **键盘支持**：按空格键快速抽卡
+- ✨ **流畅动画**：基于 Framer Motion 的精美过渡效果
+
+---
+
+## 🚀 在线体验
+
+**主站：** [https://philo.lexaverse.dev/](https://philo.lexaverse.dev/)
+
+无需安装，立即开始游戏！
+
+---
+
+## 🛠️ 技术栈
+
+<div align="center">
+
+| 技术 | 版本 | 用途 |
+|------|------|------|
+| **React** | 18.3.1 | UI 框架 |
+| **TypeScript** | 5.7.2 | 类型安全 |
+| **Vite** | 6.0.11 | 构建工具 |
+| **Tailwind CSS** | 4.1.3 | 样式系统 |
+| **shadcn/ui** | Latest | UI 组件库 |
+| **Framer Motion** | 12.4.0 | 动画引擎 |
+| **Lucide React** | 0.469.0 | 图标库 |
+
+</div>
+
+---
+
+## 💻 本地开发
+
+### 前置要求
+
+- Node.js >= 18.0.0
+- npm 或 yarn
+
+### 安装步骤
+
+```bash
+# 1. 克隆仓库
+git clone https://github.com/AlyciaBHZ/philo-drinking.git
+
+# 2. 进入项目目录
+cd philo-drinking
+
+# 3. 安装依赖
+npm install
+
+# 4. 启动开发服务器
+npm run dev
+```
+
+访问 `http://localhost:5173` 开始游戏！
+
+### 可用命令
+
+```bash
+npm run dev          # 启动开发服务器
+npm run build        # 构建生产版本
+npm run preview      # 预览构建结果
+npm run lint         # 代码检查
+```
+
+---
+
+## 🎮 游戏玩法
+
+### 基本规则
+
+1. **开始游戏**：点击"抽卡"按钮或按空格键
+2. **阅读卡片**：每张卡片包含哲学家、主题、挑战内容
+3. **执行任务**：根据卡片内容进行互动
+4. **切换模式**：点击底部按钮切换酒精/无酒精版本
+5. **查看背景**：点击"查看哲学背景"了解更多
+
+### 卡片类型
+
+- 🤔 **哲学思考**：引发深度讨论的经典问题
+- 🎭 **真心话大冒险**：创意挑战和有趣问答
+- 🔥 **难度等级**：1-3 个火焰图标表示挑战强度
+- 🏷️ **标签系统**：快速识别卡片类别
+
+### 快捷键
+
+- `Space` - 抽取下一张卡片
+- 点击调色板图标 - 切换主题颜色
+- 点击洗牌图标 - 重新洗牌
+
+---
+
+## 📁 项目结构
+
+```
+philo-drinking/
+├── public/
+│   ├── cards.json          # 卡片数据库
+│   └── CNAME              # 自定义域名配置
+├── src/
+│   ├── components/
+│   │   └── ui/            # shadcn/ui 组件
+│   ├── hooks/
+│   │   └── useGameEngine.ts  # 游戏逻辑核心
+│   ├── App.tsx            # 主应用组件
+│   └── main.tsx           # 入口文件
+├── .github/
+│   └── workflows/
+│       └── deploy.yml     # GitHub Actions 部署配置
+├── vite.config.ts         # Vite 配置
+└── package.json           # 项目依赖
+```
+
+---
+
+## 🎨 自定义卡片
+
+想添加自己的卡片？编辑 `public/cards.json`：
+
+```json
+{
+  "id": "unique-id",
+  "philosopher": "哲学家名字",
+  "title": "卡片标题",
+  "summary": "主要内容",
+  "detail": "详细说明（可选）",
+  "alt": "无酒精版本（可选）",
+  "background": "哲学背景（可选）",
+  "tags": ["标签1", "标签2"],
+  "level": 2
+}
+```
+
+---
+
+## 🚢 部署
+
+本项目使用 GitHub Pages 自动部署。
+
+### 自动部署流程
+
+1. 推送代码到 `main` 分支
+2. GitHub Actions 自动触发构建
+3. 部署到 GitHub Pages
+4. 2-3 分钟后更新上线
+
+### 手动部署
+
+```bash
+# 构建项目
+npm run build
+
+# 部署到 GitHub Pages
+npm run deploy
+```
+
+---
+
+## 🌐 域名配置
+
+本项目使用自定义子域名：`philo.lexaverse.dev`
+
+### DNS 设置
+
+```
+Type: CNAME
+Name: philo
+Value: alyciabhz.github.io
+```
+
+详细配置请参考 [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
+
+---
+
+## 🤝 贡献指南
+
+欢迎贡献！请遵循以下步骤：
+
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 提交 Pull Request
+
+### 贡献方向
+
+- 🎴 添加新卡片内容
+- 🐛 修复 Bug
+- ✨ 新功能开发
+- 📝 改进文档
+- 🎨 UI/UX 优化
+
+---
+
+## 📝 更新日志
+
+### v1.1.0 (2025-11-04)
+- ✅ 添加 GitHub 链接到导航栏
+- ✅ 优化卡片布局和间距
+- ✅ 改进标题和文字样式
+- ✅ 移除邮件反馈功能
+
+### v1.0.0 (2025-11-04)
+- 🎉 首次发布
+- ✨ 6 种主题配色
+- 🎴 100+ 张哲学卡片
+- 📱 响应式设计
+- 🔄 自动洗牌系统
+
+---
+
+## 📄 许可证
+
+本项目采用 MIT 许可证。详见 [LICENSE](LICENSE) 文件。
+
+---
+
+## 👨‍💻 作者
+
+**Lexa (AlyciaBHZ)**
+
+- 🌐 Portfolio: [lexaverse.dev](https://lexaverse.dev)
+- 🐙 GitHub: [@AlyciaBHZ](https://github.com/AlyciaBHZ)
+- 📧 Email: [联系我](https://lexaverse.dev/contact)
+
+---
+
+## 🙏 致谢
+
+- 设计灵感来自 [Figma Community](https://www.figma.com/design/WNuEC4T7TYaqLhvzypNfxQ/Party-Card-Game-UI)
+- UI 组件基于 [shadcn/ui](https://ui.shadcn.com/)
+- 图标来自 [Lucide](https://lucide.dev/)
+- 动画效果使用 [Framer Motion](https://www.framer.com/motion/)
+
+---
+
+## ⭐ Star History
+
+如果这个项目对您有帮助，请给它一个 Star！
+
+[![Star History Chart](https://api.star-history.com/svg?repos=AlyciaBHZ/philo-drinking&type=Date)](https://star-history.com/#AlyciaBHZ/philo-drinking&Date)
+
+---
+
+## 📞 支持与反馈
+
+遇到问题或有建议？
+
+- 💬 [提交 Issue](https://github.com/AlyciaBHZ/philo-drinking/issues)
+- 💡 [功能建议](https://github.com/AlyciaBHZ/philo-drinking/discussions)
+- 📧 [联系作者](https://lexaverse.dev/contact)
+
+---
+
+<div align="center">
+
+**用哲学点亮派对，让思考更有趣！** 🎉🤔
+
+Made with ❤️ by [Lexa](https://lexaverse.dev)
+
+[🌐 在线体验](https://philo.lexaverse.dev/) • [⭐ Star on GitHub](https://github.com/AlyciaBHZ/philo-drinking)
+
+</div>
