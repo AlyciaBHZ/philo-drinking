@@ -1,9 +1,10 @@
-﻿import { useState } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { useGameEngine } from './hooks/useGameEngine';
-import { Shuffle, Undo, Palette } from 'lucide-react';
+import { Shuffle, Undo, Palette, Flame, Github } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './components/ui/collapsible';
 import { Popover, PopoverContent, PopoverTrigger } from './components/ui/popover';
+import { Badge } from './components/ui/badge';
 import { motion, AnimatePresence } from 'motion/react';
  
 interface ColorTheme {
@@ -131,6 +132,18 @@ export default function App() {
     setDetailOpen(false);
   };
 
+  // Keyboard support: Space to draw card
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (e.code === 'Space' && !drawDisabled) {
+        e.preventDefault();
+        handleDrawCard();
+      }
+    };
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [drawDisabled]);
+
   return (
     <motion.div 
       className={`min-h-screen ${theme.colors.bg} ${theme.colors.text} flex flex-col transition-colors duration-500`}
@@ -148,6 +161,25 @@ export default function App() {
       >
         <h1 className={theme.colors.text}>PhiloDrink</h1>
         <div className="flex gap-2">
+          {/* GitHub Link */}
+          <motion.div whileTap={{ scale: 0.9 }}>
+            <Button
+              variant="ghost"
+              size="icon"
+              asChild
+              className={`${theme.colors.textMuted} hover:${theme.colors.text}`}
+            >
+              <a 
+                href="https://github.com/AlyciaBHZ/philo-drinking" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="GitHub Repository"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+            </Button>
+          </motion.div>
+
           {/* Color Theme Selector */}
           <Popover>
             <PopoverTrigger asChild>
@@ -203,65 +235,99 @@ export default function App() {
       </motion.header>
 
       {/* Card Viewport - 80% of screen */}
-      <main className="flex-1 flex items-center justify-center p-6 overflow-y-auto">
+      <main className="flex-1 flex items-center justify-center px-5 py-4 overflow-y-auto">
         <AnimatePresence mode="wait">
           {currentCard ? (
-            <motion.div 
+            <motion.div
               key={currentCard.id}
               className="w-full max-w-md space-y-6"
               initial={{ rotateY: 90, opacity: 0, scale: 0.8 }}
               animate={{ rotateY: 0, opacity: 1, scale: 1 }}
               exit={{ rotateY: -90, opacity: 0, scale: 0.8 }}
-              transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+              transition={{ duration: 0.25, type: "spring", stiffness: 150 }}
               style={{ transformStyle: "preserve-3d" }}
             >
-              {/* Philosopher name */}
-              <motion.p 
-                className={`${theme.colors.textMuted} text-center`}
+              {/* Philosopher name : Title (centered) */}
+              <motion.div
+                className="text-center space-y-2.5"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
+                transition={{ delay: 0.05 }}
               >
-                {currentCard.philosopher}
-              </motion.p>
+                <h2 className={`${theme.colors.textMuted} text-xl`}>
+                  <span className={theme.colors.text}>{currentCard.philosopher}</span>
+                  <span className={theme.colors.textMuted}>：</span>
+                  <span className={theme.colors.textMuted}>{currentCard.title}</span>
+                </h2>
+                {/* Level indicator */}
+                {currentCard.level && (
+                  <div className="flex items-center justify-center gap-1">
+                    {Array.from({ length: currentCard.level }).map((_, i) => (
+                      <Flame key={i} className={`h-4 w-4 ${theme.colors.textMuted}`} />
+                    ))}
+                  </div>
+                )}
+              </motion.div>
 
-              {/* Title */}
-              <motion.h2 
-                className={`${theme.colors.text} text-center`}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
-              >
-                {currentCard.title}
-              </motion.h2>
+              {/* Tags */}
+              {currentCard.tags && currentCard.tags.length > 0 && (
+                <motion.div
+                  className="flex justify-center gap-2 flex-wrap pb-2"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.12 }}
+                >
+                  {currentCard.tags.map((tag) => (
+                    <Badge
+                      key={tag}
+                      variant="outline"
+                      className={`${theme.colors.border} border ${theme.colors.textMuted} text-xs`}
+                    >
+                      {tag}
+                    </Badge>
+                  ))}
+                </motion.div>
+              )}
 
-              {/* Summary - Most important, extra large */}
-              <motion.div 
-                className={`${theme.colors.cardBg} rounded-lg p-6 border ${theme.colors.border}`}
+              {/* Summary - Most important */}
+              <motion.div
+                className={`${theme.colors.cardBg} rounded-lg p-6 border ${theme.colors.border} space-y-3`}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5 }}
+                transition={{ delay: 0.15 }}
               >
                 <AnimatePresence mode="wait">
-                  <motion.p 
+                  <motion.p
                     key={showAlt ? 'alt' : 'summary'}
-                    className={`text-2xl leading-relaxed ${theme.colors.text}`}
+                    className={`text-xl leading-relaxed ${theme.colors.text}`}
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.2 }}
                   >
                     {showAlt && currentCard.alt ? currentCard.alt : currentCard.summary}
                   </motion.p>
                 </AnimatePresence>
+
+                {/* Detail - Always visible below summary */}
+                {!showAlt && currentCard.detail && (
+                  <motion.p
+                    className={`text-xl leading-relaxed ${theme.colors.textMuted} italic pt-2`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.25 }}
+                  >
+                    {currentCard.detail}
+                  </motion.p>
+                )}
               </motion.div>
 
-              {/* Detail - Collapsible */}
-              {currentCard.detail && (
+              {/* Background - Collapsible */}
+              {currentCard.background && (
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 0.6 }}
+                  transition={{ delay: 0.2 }}
                 >
                   <Collapsible open={detailOpen} onOpenChange={setDetailOpen}>
                     <CollapsibleTrigger asChild>
@@ -269,17 +335,17 @@ export default function App() {
                         variant="ghost"
                         className={`w-full ${theme.colors.textMuted} hover:${theme.colors.text}`}
                       >
-                        {detailOpen ? '收起解释' : '查看哲学背景'}
+                        {detailOpen ? '收起背景' : '查看哲学背景'}
                       </Button>
                     </CollapsibleTrigger>
                     <CollapsibleContent className="mt-2">
-                      <motion.p 
+                      <motion.p
                         className={`${theme.colors.textMuted} text-center px-4`}
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                       >
-                        {currentCard.detail}
+                        {currentCard.background}
                       </motion.p>
                     </CollapsibleContent>
                   </Collapsible>
@@ -288,18 +354,18 @@ export default function App() {
 
               {/* Alt version toggle */}
               {currentCard.alt && (
-                <motion.div 
+                <motion.div
                   className="text-center"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 0.7 }}
+                  transition={{ delay: 0.25 }}
                 >
                   <motion.div whileTap={{ scale: 0.95 }}>
                     <Button
-                      variant="outline"
+                      variant="ghost"
                       size="sm"
                       onClick={() => setShowAlt(!showAlt)}
-                      className={`${theme.colors.text} ${theme.colors.border} border hover:${theme.colors.cardBg}`}
+                      className={`${theme.colors.cardBg} ${theme.colors.border} border ${theme.colors.text} hover:opacity-80`}
                     >
                       {showAlt ? '🍺 酒精版本' : '🥤 无酒精版本'}
                     </Button>
