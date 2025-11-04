@@ -234,13 +234,13 @@ export default function App() {
         </div>
       </motion.header>
 
-      {/* Card Viewport - 80% of screen */}
-      <main className="flex-1 flex items-center justify-center px-4 py-2 md:px-5 md:py-6 overflow-y-auto">
+      {/* Card Viewport - Responsive height */}
+      <main className="flex-1 flex items-center justify-center px-4 py-3 md:py-6 overflow-y-auto min-h-0">
         <AnimatePresence mode="wait">
           {currentCard ? (
             <motion.div
               key={currentCard.id}
-              className="w-full max-w-md space-y-3 md:space-y-6"
+              className="w-full max-w-md space-y-4 md:space-y-5"
               initial={{ rotateY: 90, opacity: 0, scale: 0.8 }}
               animate={{ rotateY: 0, opacity: 1, scale: 1 }}
               exit={{ rotateY: -90, opacity: 0, scale: 0.8 }}
@@ -249,7 +249,7 @@ export default function App() {
             >
               {/* Philosopher name : Title (centered) */}
               <motion.div
-                className="text-center space-y-1.5 md:space-y-2.5"
+                className="text-center space-y-2 md:space-y-3"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.05 }}
@@ -261,7 +261,7 @@ export default function App() {
                 </h2>
                 {/* Level indicator */}
                 {currentCard.level && (
-                  <div className="flex items-center justify-center gap-1">
+                  <div className="flex items-center justify-center gap-1 pt-1">
                     {Array.from({ length: currentCard.level }).map((_, i) => (
                       <Flame key={i} className={`h-4 w-4 ${theme.colors.textMuted}`} />
                     ))}
@@ -272,7 +272,7 @@ export default function App() {
               {/* Tags */}
               {currentCard.tags && currentCard.tags.length > 0 && (
                 <motion.div
-                  className="flex justify-center gap-2 flex-wrap pb-0 md:pb-2"
+                  className="flex justify-center gap-2 flex-wrap py-1 md:py-0"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.12 }}
@@ -383,13 +383,13 @@ export default function App() {
               transition={{ duration: 0.3 }}
             >
               <motion.p 
-                className={theme.colors.textMuted}
+                className={`${theme.colors.textMuted} text-lg md:text-2xl`}
                 animate={{ opacity: [0.5, 1, 0.5] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
                 {isLoading ? '正在加载卡片...' : '准备好挑战哲学派对了吗？'}
               </motion.p>
-              <p className={theme.colors.textMuted}>
+              <p className={`${theme.colors.textMuted} text-sm md:text-base`}>
                 {isLoading ? '请稍候，正在读取卡片内容。' : '点击下方按钮抽取你的命运。'}
               </p>
             
@@ -400,7 +400,7 @@ export default function App() {
 
       {/* Action Bar - Fixed Footer */}
       <motion.footer
-        className={`border-t ${theme.colors.border} p-2 md:p-4 ${theme.colors.bg}`}
+        className={`border-t ${theme.colors.border} py-3 px-4 md:py-4 md:px-6 ${theme.colors.bg}`}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -408,7 +408,7 @@ export default function App() {
         <div className="max-w-md mx-auto space-y-2 md:space-y-3">
           {/* Card count */}
           <motion.p 
-            className={`text-center ${theme.colors.textMuted}`}
+            className={`text-center ${theme.colors.textMuted} text-sm md:text-base`}
             key={deckCount}
             initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
@@ -418,14 +418,14 @@ export default function App() {
           </motion.p>
 
           {/* Buttons */}
-          <div className="flex gap-3">
+          <div className="flex gap-2 md:gap-3">
             <motion.div whileTap={{ scale: 0.9 }}>
               <Button
                 variant="outline"
                 size="icon"
                 onClick={handleUndo}
                 disabled={historyCount === 0}
-                className={`shrink-0 ${theme.colors.border} border ${theme.colors.textMuted} hover:${theme.colors.text} disabled:opacity-30`}
+                className={`shrink-0 ${theme.colors.border} border ${theme.colors.textMuted} hover:${theme.colors.text} disabled:opacity-30 h-11 w-11 md:h-10 md:w-10`}
               >
                 <Undo className="h-5 w-5" />
               </Button>
@@ -438,7 +438,7 @@ export default function App() {
               <Button
                 onClick={handleDrawCard}
                 disabled={drawDisabled}
-                className={`w-full ${theme.colors.accent} ${theme.colors.accentHover} disabled:opacity-30 h-12`}
+                className={`w-full ${theme.colors.accent} ${theme.colors.accentHover} disabled:opacity-30 h-11 md:h-12 text-base md:text-lg font-medium`}
               >
                 <motion.span
                   animate={!drawDisabled ? { scale: [1, 1.05, 1] } : {}}
