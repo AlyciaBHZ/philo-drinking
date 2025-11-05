@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { getCardsPath, SupportedLanguage } from '../i18n/config';
 
 export interface Card {
   id: string;
@@ -21,7 +22,7 @@ const fisherYatesShuffle = <T,>(items: T[]): T[] => {
   return shuffled;
 };
 
-export const useGameEngine = () => {
+export const useGameEngine = (language: SupportedLanguage) => {
   const [allCards, setAllCards] = useState<Card[]>([]);
   const [deck, setDeck] = useState<string[]>([]);
   const [history, setHistory] = useState<string[]>([]);
@@ -91,7 +92,7 @@ export const useGameEngine = () => {
     const loadCards = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch('/cards.json', { signal: controller.signal });
+        const response = await fetch(getCardsPath(language), { signal: controller.signal });
         if (!response.ok) {
           throw new Error(`Failed to load cards: ${response.status}`);
         }
@@ -128,7 +129,7 @@ export const useGameEngine = () => {
       cancelled = true;
       controller.abort();
     };
-  }, []);
+  }, [language]);
 
   return {
     currentCard,

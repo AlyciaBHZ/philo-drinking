@@ -24,7 +24,7 @@ function App() {
     shuffleDeck, 
     deckCount, 
     isLoading 
-  } = useGameEngine();
+  } = useGameEngine('zh-CN');
 
   // 2. Manage UI state based on your screenshots
   const [isSoberMode, setIsSoberMode] = useState(false);

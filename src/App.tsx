@@ -1,11 +1,12 @@
 ﻿import { useState, useEffect } from 'react';
 import { useGameEngine } from './hooks/useGameEngine';
-import { Shuffle, Undo, Palette, Flame, Github } from 'lucide-react';
+import { Shuffle, Undo, Palette, Flame, Github, Globe } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './components/ui/collapsible';
 import { Popover, PopoverContent, PopoverTrigger } from './components/ui/popover';
 import { Badge } from './components/ui/badge';
 import { motion, AnimatePresence } from 'motion/react';
+import { isSupportedLanguage, LANGUAGE_STORAGE_KEY, languageOptions, SupportedLanguage, translations } from './i18n/config';
  
 interface ColorTheme {
   name: string;
@@ -95,22 +96,24 @@ const colorThemes: ColorTheme[] = [
   }
 ];
 
-function shuffleArray<T>(array: T[]): T[] {
-  const newArray = [...array];
-  for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+const getInitialLanguage = (): SupportedLanguage => {
+  if (typeof window === 'undefined') {
+    return 'zh-CN';
   }
-  return newArray;
-}
+  const stored = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+  return isSupportedLanguage(stored) ? stored : 'zh-CN';
+};
 
 export default function App() {
-  const { currentCard, deckCount, historyCount, isLoading, drawCard, undoCard, shuffleDeck } = useGameEngine();
+  const [language, setLanguage] = useState<SupportedLanguage>(() => getInitialLanguage());
+  const { currentCard, deckCount, historyCount, isLoading, drawCard, undoCard, shuffleDeck } = useGameEngine(language);
   const [showAlt, setShowAlt] = useState(false);
   const [detailOpen, setDetailOpen] = useState(false);
   const [themeIndex, setThemeIndex] = useState(0);
 
   const theme = colorThemes[themeIndex];
+  const t = translations[language];
+  const languageMeta = languageOptions.find((option) => option.value === language);
   const drawDisabled = isLoading || (deckCount === 0 && historyCount === 0 && !currentCard);
 
   const handleReshuffle = () => {
@@ -131,6 +134,18 @@ export default function App() {
     setShowAlt(false);
     setDetailOpen(false);
   };
+
+  const handleLanguageChange = (value: string) => {
+    if (isSupportedLanguage(value)) {
+      setLanguage(value);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+    }
+  }, [language]);
 
   // Keyboard support: Space to draw card
   useEffect(() => {
@@ -161,6 +176,58 @@ export default function App() {
       >
         <h1 className={theme.colors.text}>PhiloDrink</h1>
         <div className="flex gap-2">
+          {/* Language Selector */}
+          <Popover>
+            <PopoverTrigger asChild>
+              <motion.div whileTap={{ scale: 0.9 }}>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className={`${theme.colors.textMuted} hover:${theme.colors.text} transition-colors`}
+                  aria-label={t.languageTrigger}
+                >
+                  <Globe className="h-5 w-5" />
+                </Button>
+              </motion.div>
+            </PopoverTrigger>
+            <PopoverContent 
+              className={`w-48 p-2 ${theme.colors.cardBg} ${theme.colors.border} border`}
+              align="end"
+            >
+              <div className="space-y-1">
+                {languageOptions.map((option) => (
+                  <motion.button
+                    key={option.value}
+                    onClick={() => handleLanguageChange(option.value)}
+                    className={`w-full flex items-center gap-3 px-3 py-2 rounded-md transition-all text-left ${
+                      language === option.value
+                        ? `${theme.colors.accent} ${theme.colors.text}`
+                        : `${theme.colors.textMuted} hover:${theme.colors.text} ${theme.colors.cardBg} hover:bg-opacity-50`
+                    }`}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <span className="text-xl">
+                      {option.value === 'zh-CN' ? '🇨🇳' : '🇬🇧'}
+                    </span>
+                    <span className="font-medium text-sm">
+                      {option.label}
+                    </span>
+                    {language === option.value && (
+                      <motion.span
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        className="ml-auto text-sm"
+                      >
+                        ✓
+                      </motion.span>
+                    )}
+                  </motion.button>
+                ))}
+              </div>
+            </PopoverContent>
+          </Popover>
+
           {/* GitHub Link */}
           <motion.div whileTap={{ scale: 0.9 }}>
             <Button
@@ -195,7 +262,7 @@ export default function App() {
             </PopoverTrigger>
             <PopoverContent className={`w-48 ${theme.colors.cardBg} ${theme.colors.border} border`}>
               <div className="space-y-2">
-                <p className={`${theme.colors.textMuted} mb-3`}>选择主题</p>
+                <p className={`${theme.colors.textMuted} mb-3`}>{t.selectThemeLabel}</p>
                 <div className="grid grid-cols-3 gap-2">
                   {colorThemes.map((colorTheme, index) => (
                     <motion.button
@@ -335,7 +402,7 @@ export default function App() {
                         variant="ghost"
                         className={`w-full ${theme.colors.textMuted} hover:${theme.colors.text}`}
                       >
-                        {detailOpen ? '收起背景' : '查看哲学背景'}
+                        {detailOpen ? t.collapseBackground : t.viewBackground}
                       </Button>
                     </CollapsibleTrigger>
                     <CollapsibleContent className="mt-2">
@@ -367,7 +434,7 @@ export default function App() {
                       onClick={() => setShowAlt(!showAlt)}
                       className={`${theme.colors.cardBg} ${theme.colors.border} border ${theme.colors.text} hover:opacity-80`}
                     >
-                      {showAlt ? '🍺 酒精版本' : '🥤 无酒精版本'}
+                      {showAlt ? t.alcoholVersion : t.soberVersion}
                     </Button>
                   </motion.div>
                 </motion.div>
@@ -387,10 +454,10 @@ export default function App() {
                 animate={{ opacity: [0.5, 1, 0.5] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
-                {isLoading ? '正在加载卡片...' : '准备好挑战哲学派对了吗？'}
+                {isLoading ? t.loadingHeadline : t.idleHeadline}
               </motion.p>
               <p className={`${theme.colors.textMuted} text-sm md:text-base`}>
-                {isLoading ? '请稍候，正在读取卡片内容。' : '点击下方按钮抽取你的命运。'}
+                {isLoading ? t.loadingSubhead : t.idleSubhead}
               </p>
             
             </motion.div>
@@ -414,7 +481,7 @@ export default function App() {
             animate={{ scale: 1 }}
             transition={{ duration: 0.3 }}
           >
-            剩余 {deckCount} 张卡片
+            {t.cardsRemaining(deckCount)}
           </motion.p>
 
           {/* Buttons */}
@@ -444,7 +511,7 @@ export default function App() {
                   animate={!drawDisabled ? { scale: [1, 1.05, 1] } : {}}
                   transition={{ duration: 1.5, repeat: Infinity }}
                 >
-                  {deckCount === 0 && !isLoading ? '自动洗牌中' : '抽卡'}
+                  {deckCount === 0 && !isLoading ? t.shuffleInProgress : t.drawCard}
                 </motion.span>
               </Button>
             </motion.div>
@@ -454,7 +521,3 @@ export default function App() {
     </motion.div>
   );
 }
-
-
-
-

@@ -1,0 +1,1007 @@
+[
+  {
+    "id": "marx_seize_the_means",
+    "philosopher": "Karl Marx",
+    "title": "Seize the Means of Production",
+    "background": "Karl Marx believed that the working class must seize the capitalists' means of production (such as factories and tools).",
+    "summary": "Instantly \"possess\" another player's drink. You can exchange your glass with any player on the field.",
+    "detail": "This is even better if your glass is full and the other person's is empty. Long live the revolution!",
+    "alt": "[Dare] Open your mobile phone album and let the player on the left choose a photo. You must explain the story behind the photo.",
+    "tags": [
+      "Exchange",
+      "Duel",
+      "Instant"
+    ],
+    "level": 2
+  },
+  {
+    "id": "beauvoir_existential_link",
+    "philosopher": "Simone de Beauvoir",
+    "title": "Existential Link",
+    "background": "Beauvoir explores the concept of the \"other\" and how we define ourselves through others.",
+    "summary": "Choose one player to be your \"other\". For the next 3 rounds, any time one of you drinks, the other must drink too.",
+    "detail": "You are now a community of destiny. When one is prosperous, both are prosperous; when one is lost, both are harmed.",
+    "alt": "[Truth] Which person here are you most jealous of? Why?",
+    "tags": [
+      "Ongoing",
+      "Social",
+      "Linked"
+    ],
+    "level": 3
+  },
+  {
+    "id": "camus_sisyphus",
+    "philosopher": "Albert Camus",
+    "title": "Absurd Sisyphus",
+    "background": "Camus's Sisyphus was forced to push a boulder up a mountain for eternity, which he believed symbolized the absurdity of life.",
+    "summary": "You are now Sisyphus. You must hold an ice cube (or coin, coaster) against your head until your next turn.",
+    "detail": "If the \"boulder\" falls, you have to take a sip and put it back on your head. You have to imagine yourself being happy.",
+    "alt": "[Dare] Go outside (or open the window) and shout three times in a Siri tone without expression: \"I'm happy. I'm happy. I'm happy.\"",
+    "tags": [
+      "Physical",
+      "Ongoing",
+      "Penalty"
+    ],
+    "level": 3
+  },
+  {
+    "id": "hume_problem_of_induction",
+    "philosopher": "David Hume",
+    "title": "Problem of Induction",
+    "background": "Hume believed that there is no guarantee that something that happened in the past (the rising of the sun) will happen in the future.",
+    "summary": "You initiate a game of \"I've never...\". All players who do this must take a sip.",
+    "detail": "You name something you haven't done but that you suspect others have done. For example: \"I have never slept in the NUS library.\"",
+    "alt": "[Truth] Tell me something you know is wrong, but you still do it \"habitually\".",
+    "tags": [
+      "Verbal",
+      "Social",
+      "Reveal"
+    ],
+    "level": 2
+  },
+  {
+    "id": "locke_tabula_rasa",
+    "philosopher": "John Locke",
+    "title": "Tabula Rasa",
+    "background": "Locke believed that the human mind is born as a \"blank slate\" and that all knowledge comes from experience.",
+    "summary": "You are a \"blank slate\". For the next 2 rounds, you must imitate the sitting position and movements of the player on your left.",
+    "detail": "If he/she drinks water, pretend to drink water too. If he/she scratches his/her head, scratch your head too. If imitation fails, take a sip.",
+    "alt": "[Dare] Have everyone in the group write (in pen) their first impression of you (SFW) on your arm.",
+    "tags": [
+      "Physical",
+      "Mimicry",
+      "Ongoing"
+    ],
+    "level": 2
+  },
+  {
+    "id": "heidegger_angst",
+    "philosopher": "Martin Heidegger",
+    "title": "Dasein's Angst",
+    "background": "Heidegger believes that the anxiety (Angst) generated when facing \"nothing\" is the key to understanding \"being\".",
+    "summary": "Choose a player. You must engage in an \"existential gaze\" with the other person, where the two of you look at each other without saying a word.",
+    "detail": "The first person to laugh, look away, or speak takes a sip. Face the void.",
+    "alt": "[Dare] Go to a corner alone (such as a corner), stand facing the wall, and \"meditate on existence\" for 2 minutes.",
+    "tags": [
+      "Duel",
+      "Physical",
+      "Psychological"
+    ],
+    "level": 2
+  },
+  {
+    "id": "aquinas_unmoved_mover",
+    "philosopher": "Thomas Aquinas",
+    "title": "Unmoved Mover",
+    "background": "Aquinas argued that everything in the universe needs a \"first moving force\", that is, God, who moves everything but is not moved.",
+    "summary": "You are the \"immovable mover.\" For the next 3 rounds, you are immune to all other cards' \"drinking\" penalties.",
+    "detail": "You can push others to drink, but others can't \"push\" you. This is a divine immunity.",
+    "alt": "[Truth] \"Confess\", when was the last time you lied? What lies were told to whom?",
+    "tags": [
+      "Protection",
+      "Status",
+      "Ongoing"
+    ],
+    "level": 3
+  },
+  {
+    "id": "augustine_confessions",
+    "philosopher": "Saint Augustine",
+    "title": "\"Lord, Grant Me Chastity...But Not Yet\"",
+    "background": "In the Confessions, Augustine confessed to his youthful excesses and addiction to \"guilty pleasures.\"",
+    "summary": "You must \"confess\" a \"guilty pleasure\" of yours.",
+    "detail": "For example, a show you love to watch or a song you love to listen to even though you know it's terrible. The whole audience votes. If more than half of the people also like it, you are safe; otherwise, you take a sip alone.",
+    "alt": "[Dare] Send a message to an elder in your family: \"I love you.\" (No contextual explanation allowed)",
+    "tags": [
+      "Verbal",
+      "Voting",
+      "Social"
+    ],
+    "level": 2
+  },
+  {
+    "id": "foucault_panopticon",
+    "philosopher": "Michel Foucault",
+    "title": "Panopticon",
+    "background": "Foucault used the \"Panorama\" prison model to illustrate how continuous surveillance disciplines people's behavior.",
+    "summary": "You are now the \"Watcher\". Place this card in front of you. Anyone who makes eye contact with you for the next 3 rounds must take a sip.",
+    "detail": "They all know they may be being watched, so they will actively avoid your gaze.",
+    "alt": "[Dare] Exchange mobile phones with the player on the right for 2 minutes. Neither of you can look at each other's phones, but the threat of \"possibly being watched\" is punishment.",
+    "tags": [
+      "Ongoing",
+      "Social",
+      "Duel"
+    ],
+    "level": 3
+  },
+  {
+    "id": "derrida_deconstruction",
+    "philosopher": "Jacques Derrida",
+    "title": "Différance",
+    "background": "Derrida believes that the meaning of words is always being \"delayed\" and \"differentiated\" and can never be fixed.",
+    "summary": "Before your next turn, you must follow a new rule when speaking: you must end each sentence with \"...do you know what I mean?\"",
+    "detail": "This will continually \"delay\" the final communication of your meaning. If you forgot, take a sip.",
+    "alt": "[Dare] Choose a common word (like \"table\") and within the next 3 minutes you must replace it with another word (like \"banana\" every time you want to say \"table\").",
+    "tags": [
+      "Verbal",
+      "Ongoing",
+      "Penalty"
+    ],
+    "level": 2
+  },
+  {
+    "id": "spinoza_pantheism",
+    "philosopher": "Baruch Spinoza",
+    "title": "All Is Divine",
+    "background": "Spinoza believed that God and nature (all things) are identical and that all things are part of the divine order.",
+    "summary": "\"All things are one.\" You initiate a \"waterfall\": you start drinking, the person to your left follows, and then the next person... until you stop, the person to your left can't stop.",
+    "detail": "Feel this sacred, inseparable (alcoholic) connection.",
+    "alt": "[Dare] Hug a \"natural\" object (such as a potted plant, a tree outside your window, or if there is nothing...hug the refrigerator) and hold it there for 1 minute.",
+    "tags": [
+      "Physical",
+      "Group",
+      "Cascade"
+    ],
+    "level": 3
+  },
+  {
+    "id": "bentham_utilitarianism",
+    "philosopher": "Jeremy Bentham",
+    "title": "Greatest Happiness",
+    "background": "Bentham's utilitarianism held that the best action is that which brings \"the greatest happiness to the greatest number of people.\"",
+    "summary": "You have to put on a show (tell a joke, sing a song, dance) for the \"maximum number of people\".",
+    "detail": "After the performance, the audience will give you a score (1-5 points). Every time your average falls below 4 points, you have to take a sip. (Example: The average score is 2.5, you take two sips)",
+    "alt": "[Dare] As a \"utilitarian\", you must serve the greatest number of people: go and refill drinks or get snacks for everyone present (except yourself).",
+    "tags": [
+      "Performance",
+      "Voting",
+      "Penalty"
+    ],
+    "level": 2
+  },
+  {
+    "id": "mill_harm_principle",
+    "philosopher": "John Stuart Mill",
+    "title": "Harm Principle",
+    "background": "Mill argued that the only limit to individual freedom is not to harm others.",
+    "summary": "Demarcate your \"territory.\" During the next 3 rounds, if anyone \"hurts\" you (eg: touches you or your glass), they must take a sip.",
+    "detail": "This is your personal freedom and cannot be violated.",
+    "alt": "[Truth] Tell me a joke or idea that you know is \"offensive\" but that you secretly find funny.",
+    "tags": [
+      "Protection",
+      "Status",
+      "Duel"
+    ],
+    "level": 2
+  },
+  {
+    "id": "kierkegaard_leap_of_faith",
+    "philosopher": "Søren Kierkegaard",
+    "title": "Leap of Faith",
+    "background": "Kierkegaard believed that true faith requires an irrational, \"leap of faith\" that transcends logic.",
+    "summary": "You have to take a \"leap of faith.\" Close your eyes and let the other person pour or refill any amount of wine from your glass.",
+    "detail": "Then you must open your eyes and drink all the remaining wine in the glass. No matter how much, this is your \"faith\".",
+    "alt": "[Dare] Close your eyes and let others feed you a \"mysterious\" food from the kitchen (for example: a spoonful of soy sauce, an olive, a little mustard).",
+    "tags": [
+      "Luck",
+      "Penalty",
+      "Interaction"
+    ],
+    "level": 3
+  },
+  {
+    "id": "zhuangzi_butterfly_dream",
+    "philosopher": "Zhuangzi",
+    "title": "Butterfly Dream",
+    "background": "Zhuangzi dreamed that he had turned into a butterfly. When he woke up, he thought: \"Did I dream about the butterfly, or did the butterfly dream about me?\"",
+    "summary": "You must \"swap identities\" with another player until your next turn.",
+    "detail": "You must switch seats and speak and answer questions in the other person's voice and identity. If either person \"makes a mistake\" (for example, answers their original name), both of them take a sip.",
+    "alt": "[Dare] In the next 3 rounds, you must completely assume the role of \"Butterfly\". When someone asks you a question, you must answer it from the perspective of a butterfly (for example: \"Are you thirsty?\" \"I'm just looking for nectar.\")",
+    "tags": [
+      "Roleplay",
+      "Ongoing",
+      "Social"
+    ],
+    "level": 3
+  },
+  {
+    "id": "montesquieu_separation_of_powers",
+    "philosopher": "Baron de Montesquieu",
+    "title": "Separation of Powers",
+    "background": "Montesquieu advocated the separation of legislative, executive and judicial powers to prevent the abuse of power.",
+    "summary": "You (judiciary) designate a \"criminal.\" The player to the left of the \"criminal\" (legislative) decides how many sips he takes, and the player to the right of the \"criminal\" (executive) decides what posture he uses to drink.",
+    "detail": "(For example: the left side says \"three mouths\" and the right side says \"the golden rooster drinks independently\".) The three powers must cooperate to carry out the punishment.",
+    "alt": "[Dare] Use your weirdest gesture to confess your love to the most inanimate object in the room (such as a lamp or a bottle of wine) for 30 seconds.",
+    "tags": [
+      "Targeted",
+      "Physical",
+      "Social",
+      "Co-op"
+    ],
+    "level": 2
+  },
+  {
+    "id": "rousseau_chains",
+    "philosopher": "Jean-Jacques Rousseau",
+    "title": "Born Free, Everywhere in Chains",
+    "background": "Rousseau believed that civilized society bound human beings' \"natural\" freedom with laws and norms (\"shackles\").",
+    "summary": "[Rule Card] From now on, all players wear the \"shackles of civilization\".",
+    "detail": "Before the next [Rule Card] appears, anyone who says the words \"you\", \"I\", \"him\", \"drink\" or \"wine\" must immediately take a sip as a punishment.",
+    "alt": "[Dare] You must break the \"shackles\". In the next 5 minutes, you must refer to yourself as \"I\", \"I\" or \"I\" instead of \"I\".",
+    "tags": [
+      "Ongoing",
+      "Verbal",
+      "Penalty",
+      "Group"
+    ],
+    "level": 3
+  },
+  {
+    "id": "schopenhauer_pendulum",
+    "philosopher": "Arthur Schopenhauer",
+    "title": "Pendulum of Pain and Boredom",
+    "background": "Schopenhauer believed that life is like a pendulum, swinging between \"pain\" (unsatisfied desires) and \"boring\" (satisfied desires).",
+    "summary": "You are in \"boredom\" and need to create \"pain\". All players (starting from your left) take turns to blindly press the stopwatch on their phone for 6.00-6.99 seconds.",
+    "detail": "The first person to succeed gets ashore safely, and all those who fail (including card holders) have to take a sip and feel the \"pain\".",
+    "alt": "[Truth] Tell me something that you once wanted very much, but after getting it, you felt \"just like that\" (boring).",
+    "tags": [
+      "Challenge",
+      "Skill",
+      "Group",
+      "Penalty"
+    ],
+    "level": 2
+  },
+  {
+    "id": "sartre_sum_of_choices",
+    "philosopher": "Jean-Paul Sartre",
+    "title": "Sum of Our Choices",
+    "background": "Sartre believed that people are absolutely free, that you are forced to \"choose\" and must bear all the consequences of your choice.",
+    "summary": "All players take turns pouring any amount of wine into a common cup. After pouring, all players perform a \"rock, paper, scissors\" game.",
+    "detail": "The final winner must be responsible for his \"choice\" (that is, choosing to punch) and drink the \"sum\".",
+    "alt": "[Truth] What is the most regrettable \"choice\" you have ever made in your life?",
+    "tags": [
+      "Luck",
+      "Group",
+      "Penalty",
+      "Shared Cup"
+    ],
+    "level": 3
+  },
+  {
+    "id": "camus_nostalgia",
+    "philosopher": "Albert Camus",
+    "title": "Resistance and Nostalgia",
+    "background": "Camus believed that even if life is absurd, we can find meaning and resist nothingness through love and nostalgia.",
+    "summary": "This is a \"peace card\". All players take turns to share the most memorable and happy past moment in their lives.",
+    "detail": "After sharing, everyone raised their glasses and took a sip together for those good times that \"resisted nothingness\".",
+    "alt": "[Dare] (This rule itself is \"truthful\") Send a message to one of your exes (or someone you have a crush on), the content is: \"Suddenly I remembered that XXX (a small thing you experienced together) was really fun at the time.\"",
+    "tags": [
+      "Social",
+      "Sharing",
+      "Group",
+      "Peaceful"
+    ],
+    "level": 1
+  },
+  {
+    "id": "dennett_computational_mind",
+    "philosopher": "Daniel Dennett",
+    "title": "Black Box Mind",
+    "background": "Dennett is a philosopher who studies consciousness. He believes that mind (AI) can also be a complex computational process.",
+    "summary": "The cardholder immediately takes a group photo with everyone. Then send the photo to an AI (for example, send it to me, or use image recognition software).",
+    "detail": "You have to ask the AI: \"Which person in the photo looks like he needs a drink the most?\" The AI's designation is absolute. If the AI ​​cannot answer, the cardholder \"plays\" the AI ​​and uses the most \"algorithmic\" logic to select a person.",
+    "alt": "[Dare] Immediately post this (possibly silly) group photo to your Moments or Instagram Story without any explanation.",
+    "tags": [
+      "AI",
+      "Targeted",
+      "Luck",
+      "Tech"
+    ],
+    "level": 2
+  },
+  {
+    "id": "zhuxi_gewu_zhizhi",
+    "philosopher": "Zhu Xi",
+    "title": "Investigate Things, Extend Knowledge",
+    "background": "Zhu Xi was a master of Neo-Confucianism and advocated \"Zhizhi\" (obtaining the truth) through \"Gewu\" (study of things).",
+    "summary": "Let's start \"investigating things\" now. Starting with the cardholder, take turns naming an \"object\" in this room.",
+    "detail": "The first person who repeats or cannot express it has touched the boundary of \"reason\" and must go to \"knowledge\" - take a sip.",
+    "alt": "[Dare] To \"check\" a personal belonging of the opposite sex present (such as a bag), you must guess three things in the bag. For each wrong guess, you have to do 10 squats.",
+    "tags": [
+      "Verbal",
+      "Memory",
+      "Penalty",
+      "Observation"
+    ],
+    "level": 1
+  },
+  {
+    "id": "nietzsche_turin_horse",
+    "philosopher": "Friedrich Nietzsche",
+    "title": "Stare into the Abyss",
+    "background": "\"When you gaze into the abyss, the abyss gazes into you.\" Nietzsche suffered a nervous breakdown in Turin.",
+    "summary": "You are now \"the abyss\". You can't speak proactively until your next turn.",
+    "detail": "If any \"mortal\" (other player) initiates a conversation with you (stares into the abyss), he/she must take a sip.",
+    "alt": "[Dare] You must be like the horse (that crushed Nietzsche), crawling on the ground in a circle on all fours and making a horse sound.",
+    "tags": [
+      "Status",
+      "Ongoing",
+      "Social",
+      "Penalty"
+    ],
+    "level": 3
+  },
+  {
+    "id": "aristotle_syllogism",
+    "philosopher": "Aristotle",
+    "title": "Logical Syllogism",
+    "background": "Aristotle is the father of logic. His famous \"syllogism\" is the reasoning of (major premise, minor premise, conclusion).",
+    "summary": "You must perform a \"logical syllogism\" trial on a player.",
+    "detail": "You (Major Premise) say: \"All mortals need to drink.\" You point to a player (Minor Premise) and say: \"[Player Name] is mortal.\" The player must immediately answer: \"So I need to drink.\" (Conclusion) - and then take a sip.",
+    "alt": "[Truth] Speak out a \"truth\" that you firmly believe, and then let everyone present take turns to \"refute\" you (you can't be angry).",
+    "tags": [
+      "Verbal",
+      "Targeted",
+      "Roleplay",
+      "Logic"
+    ],
+    "level": 1
+  },
+  {
+    "id": "confucius_propriety",
+    "philosopher": "Confucius",
+    "title": "Self-Discipline and Ritual",
+    "background": "Confucius taught us to \"restrain oneself and restore propriety\", that is, to restrain one's words and deeds so that they conform to the norms of \"propriety\".",
+    "summary": "[Rule Card] From now on, all players must \"repay the gift\".",
+    "detail": "Everyone (including you) must add \"Thank you\" at the end of every sentence until the next [Rule Card] appears. If you forget, you must take a sip as a punishment for \"indecent assault\".",
+    "alt": "[Dare] You must bow 90 degrees to everyone present and say loudly: \"[Player Name], thank you for your existence!\"",
+    "tags": [
+      "Ongoing",
+      "Verbal",
+      "Penalty",
+      "Group"
+    ],
+    "level": 2
+  },
+  {
+    "id": "kant_categorical_imperative",
+    "philosopher": "Immanuel Kant",
+    "title": "Categorical Imperative",
+    "background": "Kant's \"categorical imperative\" is: your code of conduct must become a universal moral law.",
+    "summary": "[Rule Card] \"Thou shalt not swear\" is now a universal moral law.",
+    "detail": "Before the next [Rule Card] appears, any player (including you) who says bad words violates morality and must take a sip.",
+    "alt": "[Truth] What is the most \"immoral\" thought in your heart? (an \"evil\" thought you will never act on)",
+    "tags": [
+      "Ongoing",
+      "Verbal",
+      "Penalty",
+      "Group"
+    ],
+    "level": 1
+  },
+  {
+    "id": "wittgenstein_language_game",
+    "philosopher": "Ludwig Wittgenstein",
+    "title": "Limits of Language",
+    "background": "Wittgenstein said: \"The limits of my language are the limits of my world.\"",
+    "summary": "All players play a \"language game\": Idiom Solitaire (or Word Solitaire).",
+    "detail": "The first person who can't pick up has touched his \"language limit\". He must take a sip to \"expand his world.\"",
+    "alt": "[Dare] \"Whatever cannot be spoken must be silenced.\" For the next three minutes, you cannot say a word. If so, take three sips of wine.",
+    "tags": [
+      "Verbal",
+      "Challenge",
+      "Penalty",
+      "Group"
+    ],
+    "level": 2
+  },
+  {
+    "id": "arendt_banality_of_evil",
+    "philosopher": "Hannah Arendt",
+    "title": "Banality of Evil",
+    "background": "Arendt proposed \"banal evil\", which refers to ordinary people giving up thinking and blindly obeying, which ultimately leads to great evil.",
+    "summary": "All players \"blindly obey\" and pour any amount of wine into a male cup (the \"evil\" cup).",
+    "detail": "The glass is placed in the center of the table. The next player who is punished for drinking for any reason must \"stop thinking\" and drink the cup of \"banality of evil\".",
+    "alt": "[Truth] What is something you have done in the past to \"fit in\" or \"obey orders\" that you feel is silly or wrong now?",
+    "tags": [
+      "Shared Cup",
+      "Ongoing",
+      "Penalty",
+      "Group"
+    ],
+    "level": 3
+  },
+  {
+    "id": "leibniz_best_of_all_possible_worlds",
+    "philosopher": "Gottfried Wilhelm Leibniz",
+    "title": "Best of All Possible Worlds",
+    "background": "Leibniz believed that we live in \"the best of all possible worlds\" where everything is \"predetermined to be in harmony\".",
+    "summary": "All players enter a number between 0 and 360 (representing a \"list\") on their mobile phones, and do not let others see it.",
+    "detail": "Everyone flashes the numbers at the same time and adds them all up. Divide the sum by 360 and take the remainder (for example, the sum is 400, 400 % 360 = 40). Turn on the compass on your phone, and the player in the direction pointed by the remainder (40°) is the person who is \"scheduled\" to drink.",
+    "alt": "[Truth] Which \"bad thing\" in your life do you think ultimately led to a \"good thing\"? (Proof that this is the \"best possible world\")",
+    "tags": [
+      "Luck",
+      "Calculation",
+      "Group",
+      "Targeted"
+    ],
+    "level": 2
+  },
+  {
+    "id": "plato_allegory_of_the_cave",
+    "philosopher": "Plato",
+    "title": "Allegory of the Cave",
+    "background": "Plato believed that we just live in caves, looking at the shadows on the wall and mistaking them for reality.",
+    "summary": "You are trapped in a \"cave\". You have to drink with your eyes closed.",
+    "detail": "The player to your left is your \"shadow\" and must guide you (verbally) to pick up the glass and take a sip. If you spill your drink because you \"can't see,\" you must take another sip (this time with your eyes open).",
+    "alt": "[Truth] What's the latest \"shadow\" (the most embarrassing screenshot you don't want others to see) in your mobile photo album?",
+    "tags": [
+      "Physical",
+      "Challenge",
+      "Co-op",
+      "Sensory"
+    ],
+    "level": 2
+  },
+  {
+    "id": "socrates_elenchus",
+    "philosopher": "Socrates",
+    "title": "Know Thyself",
+    "background": "Socrates' \"examination\" is designed to make people realize their ignorance.",
+    "summary": "You have to \"know your drinker.\" Designate a player (the \"heckler\") who decides how many sips (1-5) you must take.",
+    "detail": "You have two choices: 1. Drink it (admit your \"ignorance\"). 2. \"Retort\": You refuse and ask the \"questioner\" to drink double the amount himself.",
+    "alt": "[Dare] You must send a message to the 10th person in your WeChat friend list, with only one word in the content: \"Why?\"",
+    "tags": [
+      "Duel",
+      "Psychological",
+      "Targeted",
+      "Game"
+    ],
+    "level": 3
+  },
+  {
+    "id": "descartes_cogito",
+    "philosopher": "René Descartes",
+    "title": "I Drink, Therefore I Am",
+    "background": "Descartes sought certainty by doubting everything, but he could not doubt \"I am doubting.\"",
+    "summary": "You have to prove your \"existence\" by \"drinking\".",
+    "detail": "But in order to \"doubt\" the action, you have to drink in an unusual way: taking a swig from the \"other side\" of your glass (the side you don't normally drink from).",
+    "alt": "[Truth] Which person present do you doubt the most? What do you suspect about him/her?",
+    "tags": [
+      "Physical",
+      "Challenge",
+      "Instant"
+    ],
+    "level": 1
+  },
+  {
+    "id": "hobbes_leviathan",
+    "philosopher": "Thomas Hobbes",
+    "title": "Leviathan",
+    "background": "Hobbes believed that in order to escape \"the war of all against all,\" people must surrender their power and submit to a \"Leviathan\" (absolute sovereign).",
+    "summary": "You are \"Leviathan\". All other players (the \"people\") must \"pay a tax\": each pours a little of their own drink into your cup.",
+    "detail": "In exchange for \"peace,\" you must fulfill the \"social contract\": drink the glass mixed with everyone's \"power.\"",
+    "alt": "[Dare] You must exercise your \"absolute sovereignty\": \"tax\" from each player - take away a piece of their snack.",
+    "tags": [
+      "Shared Cup",
+      "Group",
+      "Mixing",
+      "Penalty"
+    ],
+    "level": 3
+  },
+  {
+    "id": "pascal_wager",
+    "philosopher": "Blaise Pascal",
+    "title": "Pascal's Wager",
+    "background": "Pascal believed that the \"gains\" of believing in God (even if he did not exist) far outweighed the \"risks\" of disbelief, so belief was the more rational bet.",
+    "summary": "You must make a \"bet of faith.\" You play guessing games with a player.",
+    "detail": "If you (the cardholder) lose, you take two sips (the cost of \"losing the bet\" is high). If you win, the other person only takes a sip (the payoff of \"winning the bet\" is small). It's an unequal bet, but one you have to accept.",
+    "alt": "[Dare] You must make a \"social bet\": post a poll in your circle of friends, the options are A) \"Should I go to bed?\" and B) \"Should I have three more drinks?\" And you must abide by the results of the vote (tomorrow).",
+    "tags": [
+      "Luck",
+      "Duel",
+      "Penalty",
+      "High Risk"
+    ],
+    "level": 2
+  },
+  {
+    "id": "machiavelli_the_prince",
+    "philosopher": "Niccolò Machiavelli",
+    "title": "The Prince",
+    "background": "Machiavelli believed that in order for the monarch to maintain governance, \"the ends can justify the means.\"",
+    "summary": "\"The purpose is to make others drink.\"你必须选择一名\"目标\"，并对他说一句极其真诚、发自肺腑的赞美或祝酒词。",
+    "detail": "After finishing speaking, everyone present (including you) toasts, but only the \"target\" who is \"confused\" by you must drink it. The purpose is achieved.",
+    "alt": "[Truth] What is the most Machiavellian thing you have ever done?",
+    "tags": [
+      "Targeted",
+      "Social",
+      "Duel",
+      "Verbal"
+    ],
+    "level": 2
+  },
+  {
+    "id": "laozi_wu_wei",
+    "philosopher": "Laozi",
+    "title": "Wu Wei",
+    "background": "Laozi advocates \"governing by doing nothing\", that is, complying with the natural laws of \"Tao\" and not making unnecessary interference.",
+    "summary": "You must \"do nothing\". You must take a sip of the wine, but you cannot touch the glass with your \"palm\" or \"fingers\".",
+    "detail": "You can do this with the back of your hands, your elbows, letting someone feed you, or like a puppy (see Diogenes). If you \"force something\" (use your hands), you violate the \"Tao\" and must do it again.",
+    "alt": "[Dare] \"It's Tao, but it's very Tao.\" In the next 3 minutes, you can only answer all questions with \"um\", \"ah\" and \"oh\".",
+    "tags": [
+      "Physical",
+      "Penalty",
+      "Challenge",
+      "Shame"
+    ],
+    "level": 3
+  },
+  {
+    "id": "sun_tzu_art_of_war",
+    "philosopher": "Sun Tzu",
+    "title": "Art of War",
+    "background": "Sun Tzu said: \"Warriors are deceitful.\" (The purpose of using soldiers to fight is to \"deceive you without negotiation.\")",
+    "summary": "You must engage in a \"deception battle\" with an \"opponent.\"",
+    "detail": "Each of you, with your back on your back, pours any amount of wine into your own glass (you can fill it to the top or just a drop). You both then have 30 seconds to try, through bragging or negotiation, to convince the other person to drink *his* own drink. After 30 seconds, the negotiation ends and the two people must drink up their glasses.",
+    "alt": "[Dare] \"Know yourself and know the enemy\": You must exchange mobile phones with the player on the right and (under the supervision of the other party) read the last 10 chat records between you and the \"recent contacts\".",
+    "tags": [
+      "Duel",
+      "Psychological",
+      "Game",
+      "Verbal"
+    ],
+    "level": 3
+  },
+  {
+    "id": "diogenes_cynic",
+    "philosopher": "Diogenes",
+    "title": "The Cynic",
+    "background": "Diogenes lived in a barrel and despised all social norms. He pursued a \"natural\" life like a dog.",
+    "summary": "You have to drink \"naturally\" like a \"cynic\".",
+    "detail": "You must lie down on the ground (on all fours) and let another player place your glass on the ground, and you must take a sip of the wine, like a dog, without using your hands.",
+    "alt": "[Dare] \"Behold, a Man!\" You must go to the kitchen, get the most \"natural\" and \"original\" ingredient (such as a raw potato, a green onion), and then solemnly display it to everyone.",
+    "tags": [
+      "Physical",
+      "Shame",
+      "Penalty"
+    ],
+    "level": 3
+  },
+  {
+    "id": "berkeley_to_be_is_to_be_perceived",
+    "philosopher": "George Berkeley",
+    "title": "To Be Is to Be Perceived",
+    "background": "Bishop Berkeley believed that things exist only when they are perceived by the mind.",
+    "summary": "\"Drinking without being seen doesn't exist.\" You must drink, but before you drink, you must declare loudly: \"I am about to drink, feel me!\"",
+    "detail": "All other players must immediately stop what they are doing and turn to look at you. Before you finish the drink, if anyone looks away (stops sensing), then he/she must take a sip of the drink.",
+    "alt": "[Truth] What advantage do you most hope others will \"perceive\" (notice) about you, but no one seems to notice it?",
+    "tags": [
+      "Social",
+      "Physical",
+      "Group",
+      "Rules"
+    ],
+    "level": 2
+  },
+  {
+    "id": "hegel_dialectic",
+    "philosopher": "Georg Wilhelm Friedrich Hegel",
+    "title": "Dialectic (Thesis–Antithesis–Synthesis)",
+    "background": "Hegel's dialectic is \"thesis-antithesis-synthesis\", that is, a \"thesis\" will encounter an \"antithesis\" and will eventually be \"sublated\" into a \"synthesis\".",
+    "summary": "You have to create a \"synthesis.\" You must choose two different drinks (\"thesis\" and \"antithesis\")",
+    "detail": "Mix the two drinks in your cup (e.g. beer and Coke, or red wine and Sprite), and then you have to \"sublate\" the contradiction - drink the \"synthesis\".",
+    "alt": "[Dare] You must create a \"composition\": go to the kitchen, mix two condiments that you think are the most \"positive and negative\" (for example: sugar and soy sauce), and then let the player *left* take a sip (or at least smell it).",
+    "tags": [
+      "Mixing",
+      "Penalty",
+      "Creation",
+      "Instant"
+    ],
+    "level": 3
+  },
+  {
+    "id": "wollstonecraft_vindication",
+    "philosopher": "Mary Wollstonecraft",
+    "title": "Vindication of Reason",
+    "background": "Wollstonecraft advocated that women should receive rational education like men and get rid of the bondage of emotions.",
+    "summary": "You must complete a \"rational challenge\".",
+    "detail": "You have to fill a spoon with the wine, and then drink the wine with the spoon using only one hand (like drinking medicine) without spilling it. If you spill (\"overcome by emotion\"), you must take another swig from the cup.",
+    "alt": "[Truth] What do you think is the most \"irrational\" stereotype in your professional field (or in your daily life)?",
+    "tags": [
+      "Challenge",
+      "Skill",
+      "Physical",
+      "Penalty"
+    ],
+    "level": 1
+  },
+  {
+    "id": "baudrillard_simulacra",
+    "philosopher": "Jean Baudrillard",
+    "title": "Simulacra and Hyperreality",
+    "background": "Baudrillard believes that \"simulacra\" (such as media images) have replaced \"reality\" and we live in \"hyper-reality\".",
+    "summary": "You can't drink \"real\" wine, you have to drink a \"simulacrum\".",
+    "detail": "Go to the kitchen and pour a glass of plain water (a \"copy without the original\"), and then you have to pretend it's the strongest wine in the world and \"dry\" it in the most exaggerated manner.",
+    "alt": "[Dare] You must \"imitate\" a \"simulacra\": in the next 3 minutes, you must speak in the tone and style of your most exaggerated \"Internet celebrity\" or \"anchor\".",
+    "tags": [
+      "Roleplay",
+      "Physical",
+      "Peaceful",
+      "Performance"
+    ],
+    "level": 1
+  },
+  {
+    "id": "zeno_paradox",
+    "philosopher": "Zeno of Elea",
+    "title": "Achilles and the Tortoise",
+    "background": "Zeno's Paradox: Achilles can never catch up with the tortoise because the tortoise is always \"half\" ahead of him.",
+    "summary": "You are the \"Achilles\" and the player to your left is the \"Turtle\".",
+    "detail": "You both start drinking at the Waterfall/King's Cup at the same time. But because the \"tortoise\" is ahead, he/she can stop at any time, and you (Achilles) must drink one more second after the \"tortoise\" stops before he/she can stop. You are always \"one step slower\".",
+    "alt": "[Dare] You must perform \"Achilles chasing the turtle\": use your slowest \"slow motion\" to chase another person (the turtle) in the room until you catch him/her.",
+    "tags": [
+      "Cascade",
+      "Duel",
+      "Group",
+      "Penalty"
+    ],
+    "level": 3
+  },
+  {
+    "id": "epicurus_ataraxia",
+    "philosopher": "Epicurus",
+    "title": "Ataraxia",
+    "background": "Epicurus believed that the highest form of happiness is \"Ataraxia\", inner peace free from fear and pain.",
+    "summary": "You must seek \"peace\" (i.e. freedom from future pain).",
+    "detail": "Your biggest source of \"pain\" is \"the full glass in front of you.\" To be \"free from pain,\" you must drink half of your glass immediately to gain \"inner peace.\"",
+    "alt": "[Truth] What is your biggest \"fear\" or \"anxiety\"? (That thing that destroys your inner \"peace\")",
+    "tags": [
+      "Penalty",
+      "Instant",
+      "Peaceful"
+    ],
+    "level": 1
+  },
+  {
+    "id": "judith_butler_performativity",
+    "philosopher": "Judith Butler",
+    "title": "Gender Performativity",
+    "background": "Butler believes that your \"gender\" is not what you \"are\", but what you \"do\" - it is what you constantly \"perform\".",
+    "summary": "You have to \"fuck\" the other gender. Before your next turn, you must imitate a (what you believe to be) stereotypical posture and tone of voice of the opposite sex.",
+    "detail": "For example, speaking in a clipped tone, or beating your chest in a rough tone. If you (or someone else) laughs first, you (the cardholder) must take a sip of the drink.",
+    "alt": "[Dare] In the next 5 minutes, you must give yourself a new (opposite gender) name, and everyone present must call you that.",
+    "tags": [
+      "Roleplay",
+      "Performance",
+      "Ongoing",
+      "Shame"
+    ],
+    "level": 3
+  },
+  {
+    "id": "rawls_veil_of_ignorance",
+    "philosopher": "John Rawls",
+    "title": "Veil of Ignorance",
+    "background": "Rawls proposed the \"veil of ignorance\": only when you don't know your identity (rich or poor, class), can you formulate the most \"just\" rules.",
+    "summary": "You are now behind a \"veil of ignorance.\" You have to make a \"drink sharing\" rule but don't know who is enforcing it.",
+    "detail": "You announce: \"The next person must take X sip.\" (X is decided for you). Then, the player to your left (the rule maker) chooses whether *he* drinks X sips, or *you* (the card holder) drinks X sips.",
+    "alt": "[Truth] If you could trade your life (including wealth, appearance, family) with anyone here, who would you choose? Why?",
+    "tags": [
+      "Game",
+      "Targeted",
+      "Duel",
+      "Psychological"
+    ],
+    "level": 3
+  },
+  {
+    "id": "schrodinger_cat",
+    "philosopher": "Erwin Schrödinger",
+    "title": "Schrödinger's Cat",
+    "background": "Schrödinger's cat is a thought experiment: before being observed, the cat in the box is in a superposition state of \"both dead and alive\".",
+    "summary": "Your glass is now \"Schrödinger's wine.\" You must close your eyes and designate two players.",
+    "detail": "One of the two players must pour a drink into your glass (which can be real), while the other player must pour a drink (pretend). You don't know who the \"real murderer\" is. You have to open your eyes, then choose one of them and give him a drink as a punishment. If you guess wrong, drink it yourself.",
+    "alt": "[Dare] \"Observe\": You must (with the other party's consent) open the \"box\" of the player on the right - his/her mobile takeout app, and read his/her last 3 orders out loud.",
+    "tags": [
+      "Luck",
+      "Guessing",
+      "Targeted",
+      "Duel"
+    ],
+    "level": 2
+  },
+  {
+    "id": "epictetus_stoicism",
+    "philosopher": "Epictetus",
+    "title": "Stoic Calm",
+    "background": "The Stoics believed that we cannot control external things (fate), but we can control our \"reactions\" to things (mindset).",
+    "summary": "You met \"destiny.\" You have to take a swig of wine.",
+    "detail": "But you have to control your \"reactions\": throughout the drinking session, you have to keep a poker face and not make any expressions of pain, pleasure or frowning. If that fails, take another sip.",
+    "alt": "[Truth] Tell me about one thing that has caused you the biggest emotional fluctuation (good or bad) recently.",
+    "tags": [
+      "Challenge",
+      "Physical",
+      "Penalty",
+      "Performance"
+    ],
+    "level": 1
+  },
+  {
+    "id": "freud_id_ego_superego",
+    "philosopher": "Sigmund Freud",
+    "title": "Id, Ego, Superego",
+    "background": "Freud believed that personality consists of three parts: the \"id\" that pursues happiness, the \"superego\" that follows morality, and the \"ego\" that mediates between the two.",
+    "summary": "You (the ego) must choose between the id and the superego.",
+    "detail": "\"I\" (the player to your left) orders you to take three sips. Your \"superego\" (the player to your right) orders you not to take a sip. You (the ego) must \"temper\": take a couple of sips. If the left or right player is not present, take a sip yourself.",
+    "alt": "[Truth] Tell me one of your most \"original\" (primitive, immoral) desires.",
+    "tags": [
+      "Rules",
+      "Co-op",
+      "Instant"
+    ],
+    "level": 2
+  },
+  {
+    "id": "susan_sontag_against_interpretation",
+    "philosopher": "Susan Sontag",
+    "title": "Against Interpretation",
+    "background": "Sontag believed that over-interpretation of art would kill the art itself, and that we should pay more attention to \"senses.\"",
+    "summary": "\"Don't interpret, feel.\" You have to \"feel\" your wine.",
+    "detail": "You must use 5 (irrational) words to describe the drink in your cup, such as: \"It tastes like Monday morning\", \"Polite\", \"Like snowflakes from an old TV\". If people think your description isn't \"sensory\" enough, you have to take a sip.",
+    "alt": "[Dare] \"The Erotica of Art\": For the next 3 minutes, you must describe whatever you are doing in a very \"sexy\" or \"erotic\" tone (e.g. \"Oh... I'm picking up this... cup...\").",
+    "tags": [
+      "Verbal",
+      "Performance",
+      "Sensory",
+      "Challenge"
+    ],
+    "level": 3
+  },
+  {
+    "id": "byung_chul_han_burnout_society",
+    "philosopher": "Byung-Chul Han",
+    "title": "Burnout Society",
+    "background": "Han Bingzhe believes that modern people are no longer exploited by \"others\", but by \"self\", and we are all victims of the \"merit society\".",
+    "summary": "You are a victim of the \"merit society\" and you are \"burned out\".",
+    "detail": "Before your next turn, you must remain in your \"most comfortable\", \"laziest\" or \"most tired\" position (for example: slumped on the sofa). If you are caught sitting up straight, you are \"too aggressive\" and must take a sip.",
+    "alt": "[Truth] When was the last time you felt \"(self) burnout\"? Because of what?",
+    "tags": [
+      "Ongoing",
+      "Status",
+      "Physical",
+      "Peaceful"
+    ],
+    "level": 1
+  },
+  {
+    "id": "confucius_golden_rule",
+    "philosopher": "Confucius",
+    "title": "Golden Rule",
+    "background": "Confucius' \"Tao of Forgiveness\" (the Golden Rule) is the core of Confucian ethics, which is to treat others the same way you would treat yourself.",
+    "summary": "You must \"grant\" any amount of wine to a player (e.g. three sips).",
+    "detail": "But according to the principle of \"do unto others what you would have them do unto you, do unto others\", after you \"give\" to the other person, you must drink the *same amount* of wine yourself. To be kind to others is to be kind to yourself.",
+    "alt": "[Dare] You must do something to the player on the left that you \"least want\" others to do to you (for example: squeeze his shoulders, fix his hair).",
+    "tags": [
+      "Duel",
+      "Penalty",
+      "Targeted",
+      "Ethics"
+    ],
+    "level": 2
+  },
+  {
+    "id": "democritus_atomism",
+    "philosopher": "Democritus",
+    "title": "Atomism",
+    "background": "Democritus believed that all things (including the soul) are composed of indivisible \"atoms\" moving in \"void\".",
+    "summary": "All players are \"atoms\" and must move in the \"void\" (room).",
+    "detail": "The cardholder is the \"center of gravity.\" You start walking around the room at will, and all other players must immediately (like atoms) maintain the exact same distance and relative position as you. The first person you miss or bump into, take a sip.",
+    "alt": "[Dare] \"The Void\": You must knock on your neighbor's door under (safe) conditions, and then ask a philosophical question, such as: \"Excuse me, is everything composed of atoms?\"",
+    "tags": [
+      "Physical",
+      "Group",
+      "Challenge",
+      "Penalty"
+    ],
+    "level": 3
+  },
+  {
+    "id": "nietzsche_eternal_recurrence",
+    "philosopher": "Friedrich Nietzsche",
+    "title": "Eternal Recurrence",
+    "background": "Nietzsche's \"eternal recurrence\" thought experiment: If every moment of your life (including pain) was to be repeated an infinite number of times, would you still affirm it?",
+    "summary": "You are experiencing an \"eternal recurrence.\" You must immediately \"repeat\" your \"drinking punishment\" from the previous round.",
+    "detail": "If you didn't drink during the last round, congratulations, you confirmed your destiny. If you took three sips last round, you now have to (painfully) take three more sips.",
+    "alt": "[Truth] If your today were to be \"repeated\" ten thousand times indefinitely, would you be willing? Why?",
+    "tags": [
+      "Penalty",
+      "Memory",
+      "Luck",
+      "Rules"
+    ],
+    "level": 2
+  },
+  {
+    "id": "mencius_good_nature",
+    "philosopher": "Mencius",
+    "title": "Innate Goodness",
+    "background": "Mencius believed that \"everyone has the heart to be intolerant of others\" and that human nature is inherently good, just like water flowing downwards.",
+    "summary": "You must prove your \"good nature.\" You must pour a glass and \"kindly\" offer it to the player to your left, allowing him/her to drink it.",
+    "detail": "However, in order to prove that your \"goodness\" is not hypocrisy, as the source of \"goodness\", you must also drink the same amount of wine.",
+    "alt": "[Truth] (\"Unbearable\") Tell me something you have witnessed recently that made you unbearable (feel sad or sympathetic).",
+    "tags": [
+      "Ethics",
+      "Co-op",
+      "Penalty",
+      "Targeted"
+    ],
+    "level": 2
+  },
+  {
+    "id": "han_fei_legalism",
+    "philosopher": "Han Fei",
+    "title": "Legalist Edict",
+    "background": "Han Feizi, a representative of Legalism, advocated \"ruling the country by law\" and believed that human nature is \"evil\" and must be regulated by strict laws.",
+    "summary": "[Rule Card] You are now a \"Legalist\". You must enact a \"draconian decree\" immediately.",
+    "detail": "For example: \"No one is allowed to laugh\", \"Everyone must put their hands on their heads\". Before the next [Rule Card] appears, anyone who violates this \"law\" (including you) must accept the \"punishment\" - a sip.",
+    "alt": "[Dare] You must say a stern and unquestionable \"criticism\" to everyone present (for example: \"You, sit up straighter!\", \"You, don't look at your phone!\").",
+    "tags": [
+      "Ongoing",
+      "Rules",
+      "Group",
+      "Penalty"
+    ],
+    "level": 3
+  },
+  {
+    "id": "adam_smith_invisible_hand",
+    "philosopher": "Adam Smith",
+    "title": "Invisible Hand",
+    "background": "Adam Smith believed that in a free market, the pursuit of personal interests would be guided by \"an invisible hand\" and ultimately benefit the entire society.",
+    "summary": "The \"market\" begins to allocate resources. Everyone closed their eyes and placed their glasses in the center of the table.",
+    "detail": "Then, everyone (still with their eyes closed) reached out and \"touched\" a glass back. Whichever cup you touch, you must drink (a sip of) that cup. This is the distribution of the \"invisible hand\".",
+    "alt": "[Truth] What is the one thing you have done out of \"self-interest\" (selfishness), but in the end it turned out to be \"altruistic\" (helping others)?",
+    "tags": [
+      "Luck",
+      "Group",
+      "Exchange",
+      "Chaos"
+    ],
+    "level": 3
+  },
+  {
+    "id": "russell_teapot",
+    "philosopher": "Bertrand Russell",
+    "title": "Russell's Teapot",
+    "background": "Russell used the metaphor of a \"teapot\": I cannot prove that there is not a teapot in the universe, but the \"burden of proof\" is on the person making the claim.",
+    "summary": "You must make a ridiculous \"claim,\" for example: \"I claim that [Player A] has a teapot hidden in his sock.\"",
+    "detail": "The \"accused\" player [A] must \"prove\" (e.g. take off shoes for inspection). If he can't \"false\" your claim (e.g. he really hid the teapot... or refuses to inspect it), he drinks. If you \"falsely accuse\", you drink.",
+    "alt": "[Dare] You must \"prove\" an absurd claim: in the next minute, you must use (pseudo)scientific language to seriously demonstrate to everyone \"why this bottle of wine is actually water.\"",
+    "tags": [
+      "Verbal",
+      "Duel",
+      "Give evidence",
+      "Challenge"
+    ],
+    "level": 2
+  },
+  {
+    "id": "popper_falsifiability",
+    "philosopher": "Karl Popper",
+    "title": "Falsifiability",
+    "background": "Popper believed that the hallmark of science is not \"verifiability\" but \"falsifiability\" (i.e. it must allow itself to be disproven).",
+    "summary": "You launch a \"scientific theory\" challenge. You come up with a \"theory\" about the players present, for example: \"Everyone here wearing white shoes is drinking well.\"",
+    "detail": "All players named by a \"theory\" (including you, if applicable) must \"false\" the theory - i.e., take a swig of wine to prove \"bad drinking\".",
+    "alt": "[Truth] Tell me about a belief that you once firmly believed, but was later \"falsified\" (slapped in the face by reality).",
+    "tags": [
+      "Group",
+      "Verbal",
+      "Penalty",
+      "Rules"
+    ],
+    "level": 2
+  },
+  {
+    "id": "buddha_samsara",
+    "philosopher": "Buddha (Siddhartha Gautama)",
+    "title": "Saṃsāra",
+    "background": "Buddhism believes that all living beings suffer \"suffering\" in the \"six paths of reincarnation\" and can only be liberated by \"Nirvana\".",
+    "summary": "You are stuck in \"reincarnation\". You must designate a player to be \"karma\" bound to.",
+    "detail": "In the next 3 rounds, your (cardholder's) \"karma\" (that is, the drinking penalty you receive) must be passed on to the player, and he/she will bear it on your behalf.",
+    "alt": "[Truth] (\"Bitterness\") What is the biggest \"pain\" or \"trouble\" in your life right now?",
+    "tags": [
+      "Ongoing",
+      "Targeted",
+      "Duel",
+      "Protection"
+    ],
+    "level": 3
+  },
+  {
+    "id": "william_james_pragmatism",
+    "philosopher": "William James",
+    "title": "Pragmatism",
+    "background": "Pragmatism believes that whether an idea is \"useful\" is more important than whether it is \"true\". \"Useful\" means \"truth\".",
+    "summary": "You have to pick the \"most useful\" player. You designate a player and ask him/her to do a \"useful\" thing for you (e.g. pour you a drink, get you a snack).",
+    "detail": "As a \"reward\", you must take a sip for this \"useful\" player. This is the \"cash value\" of this \"alliance\".",
+    "alt": "[Dare] You must come up with 5 \"useful\" uses for the glass in front of you (other than drinking) within 1 minute (for example: as a dice cup, as a vase, as a musical instrument...). If you can't think of anything, drink it.",
+    "tags": [
+      "Social",
+      "Targeted",
+      "Co-op",
+      "Peaceful"
+    ],
+    "level": 1
+  },
+  {
+    "id": "saussure_signifier_signified",
+    "philosopher": "Ferdinand de Saussure",
+    "title": "Signifier and Signified",
+    "background": "Saussure believed that the connection between language (the signifier) ​​and the concept it represents (the signified) is \"arbitrary\".",
+    "summary": "You have to change a \"signifier\" \"arbitrarily\".",
+    "detail": "Before your next turn, you must call your drink a new word (for example: call it \"my homework\"). If you say the wrong thing when you want to drink (for example, say \"my drink\"), you violate \"arbitrariness\" and must take a penalty drink.",
+    "alt": "[Big Risk] \"Arbitrary\": You must play the 7th song in your playlist (on your mobile phone). No matter what it is, you must \"arbitrarily\" dance to it for 30 seconds.",
+    "tags": [
+      "Verbal",
+      "Ongoing",
+      "Challenge",
+      "Penalty"
+    ],
+    "level": 2
+  },
+  {
+    "id": "thomas_more_utopia",
+    "philosopher": "Thomas More",
+    "title": "Utopia",
+    "background": "\"Utopia\" is a \"non-existent\" ideal society where there is no private property and everything is divided equally.",
+    "summary": "You have to create a (small) \"utopia\".",
+    "detail": "You must \"average\" the wine in your glass with the wine in the two \"neighbors\" (left and right players): pour the three glasses of wine together, mix them evenly, and then \"equally divide\" them back into the three glasses. Everyone must drink the \"equally divided\" wine.",
+    "alt": "[Truth] Describe what a \"utopia\" in your fantasy (your most ideal living state) is like?",
+    "tags": [
+      "Mixing",
+      "Group",
+      "Co-op",
+      "Luck"
+    ],
+    "level": 3
+  },
+  {
+    "id": "einstein_relativity",
+    "philosopher": "Albert Einstein",
+    "title": "Relativity",
+    "background": "Einstein's theory of relativity states that time and space are relative and depend on the (motion) state of the observer.",
+    "summary": "You are \"moving at high speed\" and your time is \"dilated\".",
+    "detail": "For the next 3 rounds, \"time\" slows down for you: when the other player takes only \"one sip\" for any reason, you (the observer) must take \"two sips.\" (Your 1 second is equal to someone else's 2 seconds)",
+    "alt": "[Dare] \"Space Distortion\": You must (under the premise of ensuring safety) go from point A to point B in the room, but you cannot go in a \"straight line\", you must crawl around the \"gravity well\" (such as a table or a person) in the room to reach it.",
+    "tags": [
+      "Ongoing",
+      "Penalty",
+      "Status",
+      "Passive"
+    ],
+    "level": 2
+  }
+]
