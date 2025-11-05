@@ -174,19 +174,34 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className={theme.colors.text}>PhiloDrink</h1>
-        <div className="flex gap-2">
+        <div className="flex items-center gap-2">
+          <motion.a
+            href="https://lexaverse.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-sm font-medium ${theme.colors.textMuted} hover:${theme.colors.text} transition-colors`}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            aria-label={t.brandLink}
+          >
+            LEXAVERSE
+          </motion.a>
+          <span className={theme.colors.textMuted}>/</span>
+          <h1 className={`${theme.colors.text} text-lg font-medium`}>PhiloDrink</h1>
+        </div>
+        <div className="flex items-center gap-2 md:gap-3">
           {/* Language Selector */}
           <Popover>
             <PopoverTrigger asChild>
-              <motion.div whileTap={{ scale: 0.9 }}>
+              <motion.div whileTap={{ scale: 0.95 }}>
                 <Button
                   variant="ghost"
-                  size="icon"
-                  className={`${theme.colors.textMuted} hover:${theme.colors.text} transition-colors`}
-                  aria-label={t.languageTrigger}
+                  size="sm"
+                  className={`${theme.colors.textMuted} hover:${theme.colors.text} transition-colors gap-1.5`}
+                  aria-label={t.languageSelector}
                 >
-                  <Globe className="h-5 w-5" />
+                  <Globe className="h-4 w-4" />
+                  <span className="text-xs">{t.languageSelector}</span>
                 </Button>
               </motion.div>
             </PopoverTrigger>
@@ -229,20 +244,21 @@ export default function App() {
           </Popover>
 
           {/* GitHub Link */}
-          <motion.div whileTap={{ scale: 0.9 }}>
+          <motion.div whileTap={{ scale: 0.95 }}>
             <Button
               variant="ghost"
-              size="icon"
+              size="sm"
               asChild
-              className={`${theme.colors.textMuted} hover:${theme.colors.text}`}
+              className={`${theme.colors.textMuted} hover:${theme.colors.text} gap-1.5`}
             >
               <a 
                 href="https://github.com/AlyciaBHZ/philo-drinking" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                aria-label="GitHub Repository"
+                aria-label={t.githubLink}
               >
-                <Github className="h-5 w-5" />
+                <Github className="h-4 w-4" />
+                <span className="hidden md:inline text-xs">GitHub</span>
               </a>
             </Button>
           </motion.div>
@@ -250,13 +266,15 @@ export default function App() {
           {/* Color Theme Selector */}
           <Popover>
             <PopoverTrigger asChild>
-              <motion.div whileTap={{ scale: 0.9 }}>
+              <motion.div whileTap={{ scale: 0.95 }}>
                 <Button
                   variant="ghost"
-                  size="icon"
-                  className={`${theme.colors.textMuted} hover:${theme.colors.text}`}
+                  size="sm"
+                  className={`${theme.colors.textMuted} hover:${theme.colors.text} gap-1.5`}
+                  aria-label={t.themeSwitcher}
                 >
-                  <Palette className="h-5 w-5" />
+                  <Palette className="h-4 w-4" />
+                  <span className="hidden md:inline text-xs">{t.themeSwitcher}</span>
                 </Button>
               </motion.div>
             </PopoverTrigger>
@@ -288,14 +306,16 @@ export default function App() {
           </Popover>
 
           {/* Reshuffle Button */}
-          <motion.div whileTap={{ scale: 0.9, rotate: 180 }} transition={{ duration: 0.3 }}>
+          <motion.div whileTap={{ scale: 0.95, rotate: 180 }} transition={{ duration: 0.3 }}>
             <Button
               variant="ghost"
-              size="icon"
+              size="sm"
               onClick={handleReshuffle}
-              className={`${theme.colors.textMuted} hover:${theme.colors.text}`}
+              className={`${theme.colors.textMuted} hover:${theme.colors.text} gap-1.5`}
+              aria-label={t.reshuffleButton}
             >
-              <Shuffle className="h-5 w-5" />
+              <Shuffle className="h-4 w-4" />
+              <span className="hidden md:inline text-xs">{t.reshuffleButton}</span>
             </Button>
           </motion.div>
         </div>

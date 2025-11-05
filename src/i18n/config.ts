@@ -21,6 +21,12 @@ interface UiCopy {
   drawCard: string;
   languageTrigger: string;
   languagePlaceholder: string;
+  // Header
+  brandLink: string;
+  themeSwitcher: string;
+  githubLink: string;
+  languageSelector: string;
+  reshuffleButton: string;
 }
 
 export const LANGUAGE_STORAGE_KEY = 'philo:language';
@@ -59,6 +65,12 @@ export const translations: Record<SupportedLanguage, UiCopy> = {
     drawCard: '抽卡',
     languageTrigger: '语言',
     languagePlaceholder: '选择语言',
+    // Header
+    brandLink: '返回主页',
+    themeSwitcher: '切换主题',
+    githubLink: 'GitHub 仓库',
+    languageSelector: '切换语言',
+    reshuffleButton: '重新洗牌',
   },
   en: {
     selectThemeLabel: 'Choose Theme',
@@ -75,6 +87,12 @@ export const translations: Record<SupportedLanguage, UiCopy> = {
     drawCard: 'Draw a Card',
     languageTrigger: 'Language',
     languagePlaceholder: 'Select a language',
+    // Header
+    brandLink: 'Back to Homepage',
+    themeSwitcher: 'Change Theme',
+    githubLink: 'GitHub Repository',
+    languageSelector: 'Change Language',
+    reshuffleButton: 'Reshuffle Deck',
   },
 };
 
