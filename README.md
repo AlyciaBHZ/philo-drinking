@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![PhiloDrink Banner](https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80)
+![PhiloDrink Banner](./src/project.jpg)
 
 **一个融合哲学思考与派对游戏的互动式卡牌游戏**
 
