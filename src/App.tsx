@@ -201,7 +201,7 @@ export default function App() {
                   aria-label={t.languageSelector}
                 >
                   <Globe className="h-4 w-4" />
-                  <span className="text-xs">{t.languageSelector}</span>
+                  <span className="text-xs">Language</span>
                 </Button>
               </motion.div>
             </PopoverTrigger>

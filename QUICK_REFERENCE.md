@@ -60,11 +60,13 @@ git push origin main
 
 ## 📚 完整文档
 
-| 文档 | 用途 |
-|------|------|
-| `MULTILINGUAL_AND_SEO_COMPLETE.md` | 总体概览 |
-| `SEO_OPTIMIZATION_GUIDE.md` | 详细 SEO 指南 |
-| `SEO_DEPLOY_CHECKLIST.md` | 快速部署清单 |
+| 文档 | 用途 | 重要性 |
+|------|------|--------|
+| **开发者日志.md** | 技术细节与更新记录 | ⭐⭐⭐ |
+| **README.md** | 项目介绍与快速开始 | ⭐⭐⭐ |
+| **INTERNATIONALIZATION_BEST_PRACTICE.md** | 🌍 国际化最佳实践 | ⭐⭐⭐ 必读！ |
+| **HEADER_ENHANCEMENT.md** | Header 优化详解 | ⭐⭐ |
+| **MOBILE_LANGUAGE_FIX.md** | 移动端语言选择器优化 | ⭐⭐ |
 
 ---
 

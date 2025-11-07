@@ -16,6 +16,13 @@
 |------|------|------|
 | **../开发者日志.md** | 开发者日志 | 核心技术要点、配置参考、常见问题 |
 
+### 设计决策文档（新增）
+| 文档 | 说明 | 重要性 |
+|------|------|--------|
+| **INTERNATIONALIZATION_BEST_PRACTICE.md** | 🌍 国际化最佳实践 | ⭐⭐⭐ 必读！ |
+| **HEADER_ENHANCEMENT.md** | Header 优化详解 | ⭐⭐ |
+| **MOBILE_LANGUAGE_FIX.md** | 移动端语言选择器优化 | ⭐⭐ |
+
 ---
 
 ## 🗑️ 已清理
@@ -39,6 +46,9 @@
 
 **快速部署？**  
 → 查看 `QUICK_REFERENCE.md` 的部署命令
+
+**了解国际化设计？** 🌍  
+→ 查看 `INTERNATIONALIZATION_BEST_PRACTICE.md`（为什么永久显示 "Language"）
 
 **技术细节？**  
 → 查看 `../开发者日志.md` 的实现要点
